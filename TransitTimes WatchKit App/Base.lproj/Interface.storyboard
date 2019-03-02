@@ -1,15 +1,53 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11134" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14460.31" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch44" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11055"/>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14460.16"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="TransitTimes_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <table alignment="left" id="JRi-zb-DAz">
+                            <items>
+                                <tableRow id="wMC-Ka-H9v">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="2lu-pE-hRr">
+                                        <items>
+                                            <label alignment="left" text="6 - Outbound" id="y07-0m-7mT">
+                                                <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                            </label>
+                                            <label alignment="left" text="Haight &amp; Masonic" id="fvU-Fv-C0j">
+                                                <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                            </label>
+                                            <separator alignment="left" id="ZFm-1p-e6V"/>
+                                            <group width="1" alignment="left" spacing="12" id="BMY-Ig-KJ6">
+                                                <items>
+                                                    <label alignment="center" text="3 min" textAlignment="left" id="sdh-aG-ceq">
+                                                        <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                                    </label>
+                                                    <label alignment="center" text="15 min" textAlignment="left" id="k66-tY-P00">
+                                                        <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                                    </label>
+                                                    <label alignment="center" text="39 min" textAlignment="left" id="4lR-3h-HKA">
+                                                        <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                                    </label>
+                                                </items>
+                                            </group>
+                                        </items>
+                                    </group>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                </controller>
             </objects>
+            <point key="canvasLocation" x="24.391304347826086" y="23.526785714285715"/>
         </scene>
     </scenes>
 </document>
