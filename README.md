@@ -2,9 +2,10 @@
 
 [![Build Status](https://travis-ci.org/jbruce2112/transit-times.svg?branch=master)](https://travis-ci.org/jbruce2112/transit-times)
 
-
 TransitTimes is a watchOS app for quickly viewing Muni arrival information for your favorite stops
 
+
+![screenshot of app](screenshot.png)[
 
 ## License
 The code is licensed under the MIT license. The various icons are not. 
