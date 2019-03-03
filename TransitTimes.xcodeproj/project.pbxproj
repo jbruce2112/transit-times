@@ -8,8 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		52C50AF9222B145F00C1AA5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C50AF8222B145F00C1AA5C /* AppDelegate.swift */; };
-		52C50AFB222B145F00C1AA5C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C50AFA222B145F00C1AA5C /* ViewController.swift */; };
-		52C50AFE222B145F00C1AA5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52C50AFC222B145F00C1AA5C /* Main.storyboard */; };
+		52C50AFB222B145F00C1AA5C /* RouteListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C50AFA222B145F00C1AA5C /* RouteListViewController.swift */; };
 		52C50B00222B145F00C1AA5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52C50AFF222B145F00C1AA5C /* Assets.xcassets */; };
 		52C50B03222B145F00C1AA5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52C50B01222B145F00C1AA5C /* LaunchScreen.storyboard */; };
 		52C50B0E222B146000C1AA5C /* TransitTimesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C50B0D222B146000C1AA5C /* TransitTimesTests.swift */; };
@@ -24,6 +23,17 @@
 		52C50B40222B23B100C1AA5C /* NextBusService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C50B3F222B23B100C1AA5C /* NextBusService.swift */; };
 		52C50B44222B2A6800C1AA5C /* PredictionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C50B43222B2A6800C1AA5C /* PredictionResponse.swift */; };
 		52C50B46222B2EAA00C1AA5C /* PredictionRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C50B45222B2EAA00C1AA5C /* PredictionRowController.swift */; };
+		52FFC5EC222BB4A700AA94EB /* NextBusService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C50B3F222B23B100C1AA5C /* NextBusService.swift */; };
+		52FFC5ED222BB4A700AA94EB /* PredictionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C50B43222B2A6800C1AA5C /* PredictionResponse.swift */; };
+		52FFC5EF222BB5EF00AA94EB /* RouteListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FFC5EE222BB5EF00AA94EB /* RouteListViewModel.swift */; };
+		52FFC5F1222BB65800AA94EB /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FFC5F0222BB65800AA94EB /* UIViewExtensions.swift */; };
+		52FFC5F3222BBD8700AA94EB /* RouteResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FFC5F2222BBD8700AA94EB /* RouteResponse.swift */; };
+		52FFC5F4222BBE0900AA94EB /* RouteResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FFC5F2222BBD8700AA94EB /* RouteResponse.swift */; };
+		52FFC5F6222BC32300AA94EB /* RouteDetailsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FFC5F5222BC32300AA94EB /* RouteDetailsResponse.swift */; };
+		52FFC5F7222BC32300AA94EB /* RouteDetailsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FFC5F5222BC32300AA94EB /* RouteDetailsResponse.swift */; };
+		52FFC5F9222BC5CB00AA94EB /* RouteDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FFC5F8222BC5CB00AA94EB /* RouteDetailsViewModel.swift */; };
+		52FFC5FA222BC5CB00AA94EB /* RouteDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FFC5F8222BC5CB00AA94EB /* RouteDetailsViewModel.swift */; };
+		52FFC5FC222BC68300AA94EB /* RouteDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FFC5FB222BC68300AA94EB /* RouteDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,8 +88,7 @@
 /* Begin PBXFileReference section */
 		52C50AF5222B145F00C1AA5C /* TransitTimes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransitTimes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52C50AF8222B145F00C1AA5C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		52C50AFA222B145F00C1AA5C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		52C50AFD222B145F00C1AA5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		52C50AFA222B145F00C1AA5C /* RouteListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteListViewController.swift; sourceTree = "<group>"; };
 		52C50AFF222B145F00C1AA5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52C50B02222B145F00C1AA5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52C50B04222B145F00C1AA5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -99,6 +108,12 @@
 		52C50B3F222B23B100C1AA5C /* NextBusService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextBusService.swift; sourceTree = "<group>"; };
 		52C50B43222B2A6800C1AA5C /* PredictionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictionResponse.swift; sourceTree = "<group>"; };
 		52C50B45222B2EAA00C1AA5C /* PredictionRowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictionRowController.swift; sourceTree = "<group>"; };
+		52FFC5EE222BB5EF00AA94EB /* RouteListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteListViewModel.swift; sourceTree = "<group>"; };
+		52FFC5F0222BB65800AA94EB /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		52FFC5F2222BBD8700AA94EB /* RouteResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteResponse.swift; sourceTree = "<group>"; };
+		52FFC5F5222BC32300AA94EB /* RouteDetailsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteDetailsResponse.swift; sourceTree = "<group>"; };
+		52FFC5F8222BC5CB00AA94EB /* RouteDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteDetailsViewModel.swift; sourceTree = "<group>"; };
+		52FFC5FB222BC68300AA94EB /* RouteDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,11 +167,14 @@
 			isa = PBXGroup;
 			children = (
 				52C50AF8222B145F00C1AA5C /* AppDelegate.swift */,
-				52C50AFA222B145F00C1AA5C /* ViewController.swift */,
-				52C50AFC222B145F00C1AA5C /* Main.storyboard */,
+				52C50AFA222B145F00C1AA5C /* RouteListViewController.swift */,
+				52FFC5EE222BB5EF00AA94EB /* RouteListViewModel.swift */,
 				52C50AFF222B145F00C1AA5C /* Assets.xcassets */,
 				52C50B01222B145F00C1AA5C /* LaunchScreen.storyboard */,
 				52C50B04222B145F00C1AA5C /* Info.plist */,
+				52FFC5F0222BB65800AA94EB /* UIViewExtensions.swift */,
+				52FFC5FB222BC68300AA94EB /* RouteDetailsViewController.swift */,
+				52FFC5F8222BC5CB00AA94EB /* RouteDetailsViewModel.swift */,
 			);
 			path = TransitTimes;
 			sourceTree = "<group>";
@@ -190,6 +208,8 @@
 				52C50B3D222B214300C1AA5C /* FavoritesViewModel.swift */,
 				52C50B3F222B23B100C1AA5C /* NextBusService.swift */,
 				52C50B43222B2A6800C1AA5C /* PredictionResponse.swift */,
+				52FFC5F2222BBD8700AA94EB /* RouteResponse.swift */,
+				52FFC5F5222BC32300AA94EB /* RouteDetailsResponse.swift */,
 				52C50B45222B2EAA00C1AA5C /* PredictionRowController.swift */,
 			);
 			path = "TransitTimes WatchKit Extension";
@@ -322,7 +342,6 @@
 			files = (
 				52C50B03222B145F00C1AA5C /* LaunchScreen.storyboard in Resources */,
 				52C50B00222B145F00C1AA5C /* Assets.xcassets in Resources */,
-				52C50AFE222B145F00C1AA5C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,8 +376,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52C50AFB222B145F00C1AA5C /* ViewController.swift in Sources */,
+				52C50AFB222B145F00C1AA5C /* RouteListViewController.swift in Sources */,
+				52FFC5F9222BC5CB00AA94EB /* RouteDetailsViewModel.swift in Sources */,
+				52FFC5EC222BB4A700AA94EB /* NextBusService.swift in Sources */,
+				52FFC5F6222BC32300AA94EB /* RouteDetailsResponse.swift in Sources */,
 				52C50AF9222B145F00C1AA5C /* AppDelegate.swift in Sources */,
+				52FFC5ED222BB4A700AA94EB /* PredictionResponse.swift in Sources */,
+				52FFC5F1222BB65800AA94EB /* UIViewExtensions.swift in Sources */,
+				52FFC5EF222BB5EF00AA94EB /* RouteListViewModel.swift in Sources */,
+				52FFC5FC222BC68300AA94EB /* RouteDetailsViewController.swift in Sources */,
+				52FFC5F4222BBE0900AA94EB /* RouteResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,11 +402,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				52C50B3E222B214300C1AA5C /* FavoritesViewModel.swift in Sources */,
+				52FFC5FA222BC5CB00AA94EB /* RouteDetailsViewModel.swift in Sources */,
 				52C50B44222B2A6800C1AA5C /* PredictionResponse.swift in Sources */,
+				52FFC5F7222BC32300AA94EB /* RouteDetailsResponse.swift in Sources */,
 				52C50B40222B23B100C1AA5C /* NextBusService.swift in Sources */,
 				52C50B46222B2EAA00C1AA5C /* PredictionRowController.swift in Sources */,
 				52C50B29222B146000C1AA5C /* ExtensionDelegate.swift in Sources */,
 				52C50B27222B146000C1AA5C /* FavoritesController.swift in Sources */,
+				52FFC5F3222BBD8700AA94EB /* RouteResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,14 +434,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		52C50AFC222B145F00C1AA5C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				52C50AFD222B145F00C1AA5C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		52C50B01222B145F00C1AA5C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

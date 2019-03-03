@@ -1,7 +1,7 @@
 import Foundation
 
 struct PredictionResponse: Codable {
-    let predictions: [Predictions]
+    let predictions: [Predictions]?
     let copyright: String
 }
 

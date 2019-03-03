@@ -3,11 +3,20 @@ import Foundation
 class FavoritesViewModel {
     
     private let service: NextBusService
-    private let stops = [Stop(route: "6", id: "4958"),
-                         Stop(route: "7", id: "4958")]
+    private let stops: [Stop]
     
-    init(service: NextBusService = NextBusServiceImpl()) {
+    init(favorites: [[String: String]]? = nil,
+         service: NextBusService = NextBusServiceImpl()) {
         self.service = service
+        var favoriteStops = [Stop]()
+        for favorite in favorites ?? [] {
+            guard let routeTag = favorite["routeTag"],
+                let stopTag = favorite["stopTag"] else {
+                    continue
+            }
+            favoriteStops.append(Stop(route: routeTag, tag: stopTag))
+        }
+        self.stops = favoriteStops
     }
     
     func fetchPredictions(completion: @escaping (([Predictions]?) -> Void)) {

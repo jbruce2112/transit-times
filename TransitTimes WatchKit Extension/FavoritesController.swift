@@ -1,5 +1,6 @@
 import Foundation
 import WatchKit
+import WatchConnectivity
 
 class FavoritesController: WKInterfaceController {
     
@@ -7,10 +8,22 @@ class FavoritesController: WKInterfaceController {
     @IBOutlet var loadingIndicator: WKInterfaceImage!
     
     var viewModel: FavoritesViewModel!
+    var wcSession: WCSession?
+    var favorites: [[String: String]]? = UserDefaults.standard.array(forKey: "favorites") as? [[String: String]] {
+        didSet {
+            UserDefaults.standard.set(favorites, forKey: "favorites")
+        }
+    }
 
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
-        self.viewModel = FavoritesViewModel()
+        self.viewModel = FavoritesViewModel(favorites: favorites)
+        
+        if WCSession.isSupported() {
+            wcSession = WCSession.default
+            wcSession?.delegate = self
+            wcSession?.activate()
+        }
     }
     
     override func willActivate() {
@@ -44,5 +57,15 @@ class FavoritesController: WKInterfaceController {
     
     private func stopLoadingIndicator() {
         loadingIndicator.setHidden(true)
+    }
+}
+
+extension FavoritesController: WCSessionDelegate {
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+        self.favorites = session.receivedApplicationContext["favorites"] as? [[String: String]]
+    }
+    
+    func session(_ session: WCSession, didReceiveApplicationContext applicationContext: [String: Any]) {
+        self.favorites = applicationContext["favorites"] as? [[String: String]]
     }
 }
