@@ -17,9 +17,13 @@
 		52C50B19222B146000C1AA5C /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52C50B17222B146000C1AA5C /* Interface.storyboard */; };
 		52C50B1B222B146000C1AA5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52C50B1A222B146000C1AA5C /* Assets.xcassets */; };
 		52C50B22222B146000C1AA5C /* TransitTimes WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 52C50B21222B146000C1AA5C /* TransitTimes WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		52C50B27222B146000C1AA5C /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C50B26222B146000C1AA5C /* InterfaceController.swift */; };
+		52C50B27222B146000C1AA5C /* FavoritesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C50B26222B146000C1AA5C /* FavoritesController.swift */; };
 		52C50B29222B146000C1AA5C /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C50B28222B146000C1AA5C /* ExtensionDelegate.swift */; };
 		52C50B2B222B146100C1AA5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52C50B2A222B146100C1AA5C /* Assets.xcassets */; };
+		52C50B3E222B214300C1AA5C /* FavoritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C50B3D222B214300C1AA5C /* FavoritesViewModel.swift */; };
+		52C50B40222B23B100C1AA5C /* NextBusService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C50B3F222B23B100C1AA5C /* NextBusService.swift */; };
+		52C50B44222B2A6800C1AA5C /* PredictionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C50B43222B2A6800C1AA5C /* PredictionResponse.swift */; };
+		52C50B46222B2EAA00C1AA5C /* PredictionRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C50B45222B2EAA00C1AA5C /* PredictionRowController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,10 +91,14 @@
 		52C50B1A222B146000C1AA5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52C50B1C222B146000C1AA5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52C50B21222B146000C1AA5C /* TransitTimes WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TransitTimes WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		52C50B26222B146000C1AA5C /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		52C50B26222B146000C1AA5C /* FavoritesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesController.swift; sourceTree = "<group>"; };
 		52C50B28222B146000C1AA5C /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		52C50B2A222B146100C1AA5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52C50B2C222B146100C1AA5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52C50B3D222B214300C1AA5C /* FavoritesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewModel.swift; sourceTree = "<group>"; };
+		52C50B3F222B23B100C1AA5C /* NextBusService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextBusService.swift; sourceTree = "<group>"; };
+		52C50B43222B2A6800C1AA5C /* PredictionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictionResponse.swift; sourceTree = "<group>"; };
+		52C50B45222B2EAA00C1AA5C /* PredictionRowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictionRowController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,10 +183,14 @@
 		52C50B25222B146000C1AA5C /* TransitTimes WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				52C50B26222B146000C1AA5C /* InterfaceController.swift */,
+				52C50B26222B146000C1AA5C /* FavoritesController.swift */,
 				52C50B28222B146000C1AA5C /* ExtensionDelegate.swift */,
 				52C50B2A222B146100C1AA5C /* Assets.xcassets */,
 				52C50B2C222B146100C1AA5C /* Info.plist */,
+				52C50B3D222B214300C1AA5C /* FavoritesViewModel.swift */,
+				52C50B3F222B23B100C1AA5C /* NextBusService.swift */,
+				52C50B43222B2A6800C1AA5C /* PredictionResponse.swift */,
+				52C50B45222B2EAA00C1AA5C /* PredictionRowController.swift */,
 			);
 			path = "TransitTimes WatchKit Extension";
 			sourceTree = "<group>";
@@ -362,8 +374,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52C50B3E222B214300C1AA5C /* FavoritesViewModel.swift in Sources */,
+				52C50B44222B2A6800C1AA5C /* PredictionResponse.swift in Sources */,
+				52C50B40222B23B100C1AA5C /* NextBusService.swift in Sources */,
+				52C50B46222B2EAA00C1AA5C /* PredictionRowController.swift in Sources */,
 				52C50B29222B146000C1AA5C /* ExtensionDelegate.swift in Sources */,
-				52C50B27222B146000C1AA5C /* InterfaceController.swift in Sources */,
+				52C50B27222B146000C1AA5C /* FavoritesController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

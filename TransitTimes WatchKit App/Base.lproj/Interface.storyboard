@@ -9,45 +9,57 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14460.16"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--Favorites Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="TransitTimes_WatchKit_App" customModuleProvider="target">
+                <controller id="AgC-eL-Hgc" customClass="FavoritesController" customModule="TransitTimes_WatchKit_Extension">
                     <items>
+                        <imageView alignment="center" verticalAlignment="center" hidden="YES" id="Q1k-KT-84r"/>
                         <table alignment="left" id="JRi-zb-DAz">
                             <items>
-                                <tableRow id="wMC-Ka-H9v">
+                                <tableRow identifier="PredictionRowController" id="wMC-Ka-H9v" customClass="PredictionRowController" customModule="TransitTimes_WatchKit_Extension">
                                     <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="2lu-pE-hRr">
                                         <items>
-                                            <label alignment="left" text="6 - Outbound" id="y07-0m-7mT">
+                                            <label alignment="left" text="6-Haight &amp; Parnassus" id="y07-0m-7mT" userLabel="RouteTitle">
                                                 <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
                                             </label>
-                                            <label alignment="left" text="Haight &amp; Masonic" id="fvU-Fv-C0j">
+                                            <label alignment="left" text="Masonic Ave &amp; Haight St" id="fvU-Fv-C0j">
                                                 <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
                                             </label>
                                             <separator alignment="left" id="ZFm-1p-e6V"/>
-                                            <group width="1" alignment="left" spacing="12" id="BMY-Ig-KJ6">
+                                            <group alignment="center" spacing="8" id="BMY-Ig-KJ6">
                                                 <items>
-                                                    <label alignment="center" text="3 min" textAlignment="left" id="sdh-aG-ceq">
-                                                        <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                                    <label alignment="center" text="23 min" textAlignment="left" id="sdh-aG-ceq">
+                                                        <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
                                                     </label>
                                                     <label alignment="center" text="15 min" textAlignment="left" id="k66-tY-P00">
-                                                        <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                                        <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
                                                     </label>
                                                     <label alignment="center" text="39 min" textAlignment="left" id="4lR-3h-HKA">
-                                                        <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                                        <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
                                                     </label>
                                                 </items>
                                             </group>
                                         </items>
                                     </group>
+                                    <connections>
+                                        <outlet property="firstPrediction" destination="sdh-aG-ceq" id="uZO-x8-FL2"/>
+                                        <outlet property="routeTitle" destination="y07-0m-7mT" id="Irt-W3-9Rc"/>
+                                        <outlet property="secondPrediction" destination="k66-tY-P00" id="Egk-qb-8Sd"/>
+                                        <outlet property="stop" destination="fvU-Fv-C0j" id="fiq-AX-ph9"/>
+                                        <outlet property="thirdPrediction" destination="4lR-3h-HKA" id="a9t-hX-N5b"/>
+                                    </connections>
                                 </tableRow>
                             </items>
                         </table>
                     </items>
+                    <connections>
+                        <outlet property="loadingIndicator" destination="Q1k-KT-84r" id="fkR-ss-FJR"/>
+                        <outlet property="table" destination="JRi-zb-DAz" id="5HZ-Hq-fMK"/>
+                    </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="24.391304347826086" y="23.526785714285715"/>
+            <point key="canvasLocation" x="-277" y="-46"/>
         </scene>
     </scenes>
 </document>
